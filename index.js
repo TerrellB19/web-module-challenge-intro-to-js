@@ -63,7 +63,7 @@ let x = "1999"
  
 function stringToInteger(){
 
-console.log(parseInt(x))
+console.log(parseInt(x));
 }
 stringToInteger()
 
@@ -78,8 +78,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(num1, num2){
-  return num1 * num2;
+function multiply(a, b){
+  return a * b;
 } 
 multiply(12, 15);
 
@@ -95,8 +95,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(humanAge){
-  return humanAge * 7;
+function dogYears(age){
+  return age * 7;
 }
 dogYears(5);
 
@@ -153,21 +153,21 @@ const sevenMonths = 0.58
 const twelveMonths = 1
 
 
-function hungryDog(dogLbs, dogAge){
-  if(dogAge >= 1 && dogLbs <= 5){
-    return dogLbs * 0.05;
-  } else if(dogAge >=1 && dogLbs <11){
-    return dogLbs * 0.04;
-  } else if(dogAge >=1 && dogLbs <=15){
-    return dogLbs * 0.03;
-  } else if( dogAge >=1 && dogLbs >15){
-    return dogLbs * 0.02;
-  } else if( dogAge >=twoMonths && dogAge <fourMonths){
-    return dogLbs * 0.1;
-  } else if( dogAge >=fourMonths && dogAge <sevenMonths){
-    return dogLbs * 0.05;
-  } else if( dogAge >=sevenMonths && dogAge <twelveMonths){
-    return dogLbs * 0.04;
+function hungryDog(pounds, years){
+  if(years >= 1 && pounds <= 5){
+    return pounds * 0.05;
+  } else if(years >=1 && pounds <11){
+    return pounds * 0.04;
+  } else if(years >=1 && pounds <=15){
+    return pounds * 0.03;
+  } else if( years >=1 && pounds >15){
+    return pounds * 0.02;
+  } else if( years >=twoMonths && years <fourMonths){
+    return pounds * 0.1;
+  } else if( years >=fourMonths && years <sevenMonths){
+    return pounds * 0.05;
+  } else if( years >=sevenMonths && years <twelveMonths){
+    return pounds * 0.04;
   } 
 } hungryDog(15, 1);
 
@@ -201,15 +201,15 @@ var computer = Math.floor(Math.random() * 3);
 function game(user, computer){
   
   if (computer === rock && user === paper ){
-    return("you win")
+    return("you win!")
   } else if(computer === paper && user === scissors){
-    return("you win")
+    return("you win!")
   } else if(computer === scissors && user === rock){
-    return("you win")
+    return("you win!")
   } else if(computer === user){
-    return("its a tie")
+    return("it's a tie")
   } else {
-    return(" you Lose")
+    return("you lose!")
   }
 } game(paper, computer);
 
@@ -242,10 +242,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(Centimeters){
-  let feet = Centimeters * 0.0328;
+function feet(cm){
+  let feet = cm * 0.032;
   return feet;
-} feet(30.48)
+} console.log(feet(160));
 
 
 
@@ -265,7 +265,7 @@ Using the annoyingSong function below do the following:
 let soda_1 = 98
 
 function annoyingSong(soda){
-  return( soda + " bottles of soda on the wall, " + soda + "bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall ")
+  return( soda + " bottles of soda on the wall, " + soda + " bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall")
 } 
 
 for (let soda = 99; soda > 1; soda --){
@@ -290,11 +290,19 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-
-function grade(numGrade){
-/*Your Code here */
-}
-
+function grade(score){
+  if (score >= 90 && score <= 100){
+    return 'you got an A'
+  } else if (score >= 80 && score <= 89){
+    return 'you got a B'
+  }else if (score >= 70 && score <= 79){
+    return 'you got a C'
+  } else if (score >= 60 && score <= 69){
+    return 'you got a D'
+  } else {
+    return 'you got an F'
+  }
+} grade()
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -308,13 +316,12 @@ Using the vowelCounter function below do the following:
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
-let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
 function vowelCounter(Word) {
   
 
 } 
-//vowelCounter(onomanepilsn);
+
 
 
 
