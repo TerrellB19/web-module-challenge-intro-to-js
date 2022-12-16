@@ -19,7 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+var votingAge = 18
 
+if (votingAge >= 18){
+  console.log("true")
+}
 
 
 /*
@@ -33,7 +37,14 @@ Do the following:
 
    HINT: no function required
 */
+const firstThing = 12
+const secondThing = 24
 
+if(firstThing === secondThing){
+  console.log('true')
+} else{
+  console.log(firstThing)
+}
 
 
 
@@ -48,7 +59,13 @@ Do the following:
 
    HINT: look up the Number method
 */
+let x = "1999"
+ 
+function stringToInteger(){
 
+console.log(parseInt(x))
+}
+stringToInteger()
 
 
 
@@ -63,7 +80,9 @@ Do the following:
 
 function multiply(num1, num2){
   return num1 * num2;
-}
+} 
+
+console.log(multiply(12, 15))
 
 
 
@@ -77,9 +96,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanAge){
+  return humanAge * 7;
 }
+console.log(dogYears(5))
 
 
 
