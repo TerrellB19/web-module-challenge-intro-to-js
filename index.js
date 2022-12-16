@@ -262,14 +262,15 @@ Using the annoyingSong function below do the following:
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
-let soda_1 = 98
+
 
 function annoyingSong(soda){
   return( soda + " bottles of soda on the wall, " + soda + " bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall")
 } 
 
 for (let soda = 99; soda > 1; soda --){
-     soda_1 = soda_1 - 1;     
+  soda_1 = soda -1;   
+  soda_1 = soda_1 - 1;     
   console.log(annoyingSong(soda));
 }
 
