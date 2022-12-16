@@ -81,8 +81,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 } 
-
-return(multiply(12, 15));
+multiply(12, 15);
 
 
 
@@ -99,7 +98,7 @@ Do the following:
 function dogYears(humanAge){
   return humanAge * 7;
 }
-return(dogYears(5));
+dogYears(5);
 
 
 
@@ -170,7 +169,7 @@ function hungryDog(dogLbs, dogAge){
   } else if( dogAge >=sevenMonths && dogAge <twelveMonths){
     return dogLbs * 0.04;
   } 
-} return(hungryDog(15, 1));
+} hungryDog(15, 1);
 
 
 
@@ -212,7 +211,7 @@ function game(user, computer){
   } else {
     console.log (" you Lose")
   }
-} console.log(game(paper, computer));
+} game(paper, computer);
 
 
 
@@ -230,7 +229,7 @@ Using the miles function below do the following:
 function miles(kilometers){
   let miles = kilometers * 0.62;
   console.log(miles)
-}miles(42)
+} miles(42)
 
 
 
@@ -245,7 +244,7 @@ Using the feet function below do the following:
 function feet(Centimeters){
   let feet = Centimeters * 0.0328;
   console.log(feet)
-}feet(30.48)
+} feet(30.48)
 
 
 
