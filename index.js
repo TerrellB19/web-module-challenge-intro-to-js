@@ -200,18 +200,26 @@ var computer = Math.floor(Math.random() * 3);
 
 function game(user, computer){
   
-  if (computer === rock && user === paper ){
-    return("you win!")
-  } else if(computer === paper && user === scissors){
-    return("you win!")
-  } else if(computer === scissors && user === rock){
-    return("you win!")
-  } else if(computer === user){
-    return("it's a tie")
-  } else {
-    return("you lose!")
+  if (user === paper && computer === rock ){
+    return "you win!";
+  } 
+  
+  else if(user === rock && computer === scissors){
+    return "you win!";
+  } 
+  
+  else if(user ==  scissors && computer === paper){
+    return "you win!";
+  } 
+  
+  else if(user === computer){
+    return "it's a tie"
+  } 
+  
+  else {
+    return "you lose!"
   }
-} game(paper, computer);
+} console.log(game(paper, computer));
 
 
 
@@ -227,8 +235,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  let miles = kilometers * 0.62;
-  console.log(miles);
+  let miles = kilometers * 0.621371;
   return miles;
 } miles(42)
 
@@ -243,9 +250,9 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  let feet = cm * 0.032;
+  let feet = cm * 0.032808398950131234375;
   return feet;
-} console.log(feet(160));
+} feet(160);
 
 
 
@@ -262,13 +269,13 @@ Using the annoyingSong function below do the following:
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
-let soda_1 = 98
+let soda_1 = 4
 
 function annoyingSong(soda){
   return( soda + " bottles of soda on the wall, " + soda + " bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall")
 } 
 
-for (let soda = 99; soda > 0; soda --){   
+for (let soda = 5; soda > 4; soda --){   
   soda_1 = soda - 1;     
   console.log(annoyingSong(soda)); 
 }
