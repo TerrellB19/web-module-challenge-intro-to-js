@@ -147,9 +147,9 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
-const twoMonths = 0.26
-const fourMonths = 0.33
-const sevenMonths = 0.58
+const twoMonths = 0.16666667
+const fourMonths = 0.33333333
+const sevenMonths = 0.58333333
 const twelveMonths = 1
 
 
@@ -169,7 +169,8 @@ function hungryDog(pounds, years){
   } else if( years >=sevenMonths && years <twelveMonths){
     return pounds * 0.04;
   } 
-} hungryDog(15, 1);
+} console.log(hungryDog(5, 1));
+  console.log('dog')
 
 
 
@@ -219,7 +220,7 @@ function game(user, computer){
   else {
     return "you lose!"
   }
-} console.log(game(paper, computer));
+} console.log(game(rock, computer));
 
 
 
@@ -272,7 +273,7 @@ Using the annoyingSong function below do the following:
 let soda_1 = 4
 
 function annoyingSong(soda){
-  return( soda + " bottles of soda on the wall, " + soda + " bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall")
+  return( soda + " bottles of soda on the wall, " + soda + " bottles of soda, take one down pass it around " + soda_1 + " bottles of soda on the wall")
 } 
 
 for (let soda = 5; soda > 4; soda --){   
@@ -325,8 +326,6 @@ HINT - try looking up the .includes() method
 */
 
 function vowelCounter(Word) {
-  
-
 } 
 
 
