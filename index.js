@@ -201,15 +201,15 @@ var computer = Math.floor(Math.random() * 3);
 function game(user, computer){
   
   if (computer === rock && user === paper ){
-    console.log("you win")
+    return("you win")
   } else if(computer === paper && user === scissors){
-    console.log("you win")
+    return("you win")
   } else if(computer === scissors && user === rock){
-    console.log("you win")
+    return("you win")
   } else if(computer === user){
-    console.log("its a tie")
+    return("its a tie")
   } else {
-    console.log (" you Lose")
+    return(" you Lose")
   }
 } game(paper, computer);
 
@@ -228,7 +228,8 @@ Using the miles function below do the following:
 
 function miles(kilometers){
   let miles = kilometers * 0.62;
-  console.log(miles)
+  console.log(miles);
+  return miles;
 } miles(42)
 
 
@@ -243,7 +244,7 @@ Using the feet function below do the following:
 
 function feet(Centimeters){
   let feet = Centimeters * 0.0328;
-  console.log(feet)
+  return feet;
 } feet(30.48)
 
 
@@ -264,12 +265,12 @@ Using the annoyingSong function below do the following:
 let soda_1 = 98
 
 function annoyingSong(soda){
-  console.log( soda + " bottles of soda on the wall, " + soda + "bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall ")
+  return( soda + " bottles of soda on the wall, " + soda + "bottles of soda, take one down pass it around " + soda_1  + " bottles of soda on the wall ")
 } 
 
 for (let soda = 99; soda > 1; soda --){
      soda_1 = soda_1 - 1;     
-  annoyingSong(soda)
+  console.log(annoyingSong(soda));
 }
 
 
@@ -289,7 +290,8 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
+
+function grade(numGrade){
 /*Your Code here */
 }
 
@@ -306,11 +308,13 @@ Using the vowelCounter function below do the following:
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
+let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
+function vowelCounter(Word) {
+  
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
-}
+} 
+//vowelCounter(onomanepilsn);
 
 
 
