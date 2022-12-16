@@ -148,10 +148,29 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
+const twoMonths = 0.26
+const fourMonths = 0.33
+const sevenMonths = 0.58
+const twelveMonths = 1
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
-}
+
+function hungryDog(dogLbs, dogAge){
+  if(dogAge >= 1 && dogLbs <= 5){
+    return dogLbs * 0.05;
+  } else if(dogAge >=1 && dogLbs <11){
+    return dogLbs * 0.04;
+  } else if(dogAge >=1 && dogLbs <=15){
+    return dogLbs * 0.03;
+  } else if( dogAge >=1 && dogLbs >15){
+    return dogLbs * 0.02;
+  } else if( dogAge >=twoMonths && dogAge <fourMonths){
+    return dogLbs * 0.1;
+  } else if( dogAge >=fourMonths && dogAge <sevenMonths){
+    return dogLbs * 0.05;
+  } else if( dogAge >=sevenMonths && dogAge <twelveMonths){
+    return dogLbs * 0.04;
+  } 
+} console.log(hungryDog(15, 1))
 
 
 
@@ -175,10 +194,25 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
+const rock = 0;
+const paper = 1;
+const scissors = 2;
+var computer = Math.floor(Math.random() * 3);
 
 function game(user, computer){
-  /*add your code here*/
-}
+  
+  if (computer === rock && user === paper ){
+    console.log("you win")
+  } else if(computer === paper && user === scissors){
+    console.log("you win")
+  } else if(computer === scissors && user === rock){
+    console.log("you win")
+  } else if(computer === user){
+    console.log("its a tie")
+  } else {
+    console.log (" you Lose")
+  }
+} console.log(game(paper, computer));
 
 
 
@@ -193,9 +227,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
-}
+function miles(kilometers){
+  let miles = kilometers * 0.62;
+  console.log(miles)
+}miles(42)
 
 
 
@@ -207,9 +242,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
-}
+function feet(Centimeters){
+  let feet = Centimeters * 0.0328;
+  console.log(feet)
+}feet(30.48)
 
 
 
@@ -227,8 +263,10 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(){
+  console.log("{i} bottles of soda on the wall, {i} bottles of soda, take one down pass it around {i - 1} bottles of soda on the wall")
+} for (i === 99; i === 1; i--){
+  annoyingSong()
 }
 
 
