@@ -199,27 +199,18 @@ const scissors = 2;
 var computer = Math.floor(Math.random() * 3);
 
 function game(user, computer){
-  
-  if (user === paper && computer === rock ){
+  if (user === rock && computer === scissors){
     return "you win!";
-  } 
-  
-  else if(user === rock && computer === scissors){
+  } else if(user === paper && computer === rock){
     return "you win!";
-  } 
-  
-  else if(user ==  scissors && computer === paper){
+  } else if(user === scissors && computer === paper){
     return "you win!";
-  } 
-  
-  else if(user === computer){
-    return "it's a tie"
-  } 
-  
-  else {
-    return "you lose!"
+  } else if(user === computer){
+    return "it's a tie";
+  } else{ 
+    return "you lose!";
   }
-} console.log(game(rock, computer));
+} game(rock, computer)
 
 
 
