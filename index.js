@@ -170,7 +170,6 @@ function hungryDog(pounds, years){
     return pounds * 0.04;
   } 
 } console.log(hungryDog(5, 1));
-  console.log('dog')
 
 
 
