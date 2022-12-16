@@ -82,7 +82,7 @@ function multiply(num1, num2){
   return num1 * num2;
 } 
 
-console.log(multiply(12, 15))
+return(multiply(12, 15));
 
 
 
@@ -99,7 +99,7 @@ Do the following:
 function dogYears(humanAge){
   return humanAge * 7;
 }
-console.log(dogYears(5))
+return(dogYears(5));
 
 
 
@@ -170,7 +170,7 @@ function hungryDog(dogLbs, dogAge){
   } else if( dogAge >=sevenMonths && dogAge <twelveMonths){
     return dogLbs * 0.04;
   } 
-} console.log(hungryDog(15, 1))
+} return(hungryDog(15, 1));
 
 
 
