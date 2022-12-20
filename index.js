@@ -22,7 +22,7 @@ Do the following:
 var votingAge = 18
 
 if (votingAge >= 18){
-  console.log("true")
+  console.log('task 1a: ', "true")
 }
 
 
@@ -41,9 +41,9 @@ const firstThing = 12
 const secondThing = 24
 
 if(firstThing === secondThing){
-  console.log('true')
+  console.log('task 1b: ', true)
 } else{
-  console.log(firstThing)
+  console.log('task 1b: ', firstThing)
 }
 
 
@@ -62,10 +62,9 @@ Do the following:
 let x = "1999"
  
 function stringToInteger(){
-
-console.log(parseInt(x));
+return parseInt(x);
 }
-stringToInteger()
+console.log('task 1c: ', stringToInteger())
 
 
 
@@ -81,7 +80,7 @@ Do the following:
 function multiply(a, b){
   return a * b;
 } 
-multiply(12, 15);
+console.log('task 1d: ', multiply(12, 15));
 
 
 
@@ -98,7 +97,7 @@ Do the following:
 function dogYears(age){
   return age * 7;
 }
-dogYears(5);
+console.log('task 2: ', dogYears(5));
 
 
 
@@ -169,7 +168,7 @@ function hungryDog(pounds, years){
   } else if( years >=sevenMonths && years <twelveMonths){
     return pounds * 0.04;
   } 
-} console.log(hungryDog(5, 1));
+} console.log('task 3: ', hungryDog(5, 1));
 
 
 
@@ -214,7 +213,7 @@ if (user === computer){
 } else{
   return `you lose!`
 }
-} game('rock', computer)
+} console.log('task 4: ', game('rock', computer))
 
 
 
@@ -232,7 +231,7 @@ Using the miles function below do the following:
 function miles(kilometers){
   let miles = kilometers * 0.621371;
   return miles;
-} miles(42)
+} console.log('task 5: ', miles(42))
 
 
 
@@ -247,7 +246,7 @@ Using the feet function below do the following:
 function feet(cm){
   let feet = cm * 0.032808398950131234375;
   return feet;
-} feet(160);
+} console.log('task 5: ', feet(160));
 
 
 
@@ -272,7 +271,7 @@ function annoyingSong(soda){
 
 for (let soda = 5; soda > 4; soda --){   
   soda_1 = soda - 1;     
-  console.log(annoyingSong(soda)); 
+  console.log('task 6: ', annoyingSong(soda)); 
 }
 
 
@@ -304,7 +303,7 @@ function grade(score){
   } else {
     return 'you got an F'
   }
-} grade()
+} console.log('task 7: ', grade())
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -319,10 +318,19 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-function vowelCounter(Word) {
-} 
+function vowelCounter(str){
+  let counter = 0;
+  const vowels = ['A','a','E','e','I','i','O','o','U','u'];
+  for (let element of str){
+    if (vowels.includes(element)){
+      counter ++;
+    }
+  }
+  return counter;
+}
+console.log('VowelCount: ',vowelCounter('thIs is A test wIth some vowEls in it.'),); 
 
-
+//'this is a test with some vowels in it.'  should return 11
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
